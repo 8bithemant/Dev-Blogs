@@ -75,18 +75,14 @@ body {
   padding-right: 9px;
   margin-left: 7px;
 }
-.article-info .article-svg:hover {
-  height: 45px;
-  width: 33px;
-  /* padding-left: 9px; */
-}
 
 .article-info .article-info-1 {
   font-size: 23px;
   padding-right: 11px;
 }
-.article-info .article-description {
-  font-size: 20px;
+
+.article-description {
+  font-size: 18px;
   font-family: "Times New Roman", Times, serif;
 }
 

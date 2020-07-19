@@ -1,4 +1,5 @@
 import React, { useEffect} from 'react'
+import {Helmet} from "react-helmet";
 import {detailsArticle} from '../action/homeAction'
 import { useSelector, useDispatch } from 'react-redux';
 import 'github-markdown-css';
@@ -55,7 +56,7 @@ function ArticleScreen(props){
     },[])
 
 
-    return <div>
+    return (<div>
 
         
 
@@ -74,10 +75,8 @@ function ArticleScreen(props){
         
             {loading? <div>Loading..</div>:
             error? <div>{error}</div>:
-            (
-
-                
-                <div className='container-sm'>
+            (    
+        <div className='container-sm'>
                     <div className="container-md">
                     <img src={articles.cover_image}class="img-fluid" alt="Responsive image"/>
                     </div>
@@ -110,12 +109,25 @@ function ArticleScreen(props){
                     
 
 
+              <Helmet >
+        
+        <title>{articles.title}</title>
+        <meta name="description" content={articles.description}/> 
+        <meta property="og:title" content={articles.title}/>
+	    	<meta property="og:url" content="hemant-blogs.netlify.app"/>
+		    <meta property="og:description" content={articles.description}/>
+		    <meta property="og:image" content={articles.cover_image}/> 
+		    <meta property="og:type" content="Tech-Blog"/>
+    
+
+        </Helmet>
+
                     </div>
             )}
 
 
 
-    </div>
+    </div>)
 }
 
 export default ArticleScreen;
