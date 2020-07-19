@@ -1,24 +1,27 @@
-html{
+html {
   font-size: 18px;
   box-sizing: border-box;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-
-body{        
- background-color: #f6f8fa;
+body {
+  background-color: #f6f8fa;
   padding-top: 60px;
   padding-bottom: 40px;
 }
 
-
-.body-article{
+.body-article {
   padding-left: 10%;
   padding-top: 50px;
   padding-right: 3%;
   border-left: 1px solid rgb(218, 213, 213);
 }
 
-.articles-header-a{
+.articles-header-a {
   font-size: 43px;
   font-weight: bold;
   color: rgb(250, 250, 250);
@@ -26,25 +29,25 @@ body{
 
 /* ------------------------Home Css-------------------- */
 
-.home-banner{
+.home-banner {
   margin-left: 13%;
   padding-top: 100px;
 }
 
-.home-banner .home-header{
+.home-banner .home-header {
   font-size: 65px;
   font-weight: bolder;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-synthesis: style;
   padding-bottom: 20px;
 }
 
-.home-banner .home-description{
+.home-banner .home-description {
   font-size: 24px;
   padding-bottom: 95px;
 }
 
-.article-box{
+.article-box {
   margin-left: 13%;
   margin-right: 13%;
   justify-content: center;
@@ -52,11 +55,11 @@ body{
   /* box-shadow:5px rgb(44, 212, 44); */
 }
 
-.article-title{
-  font-size: 34px;
+.article-title {
+  font-size: 2.125rem;
 }
 
-.article-info{
+.article-info {
   padding-top: 5px;
   padding-bottom: 3px;
   display: flex;
@@ -66,28 +69,43 @@ body{
   /* text-align: center; */
 }
 
-.article-info .article-svg{
+.article-info .article-svg {
   height: 40px;
   width: 30px;
   padding-right: 9px;
   margin-left: 7px;
 }
-.article-info .article-svg:hover{
+.article-info .article-svg:hover {
   height: 45px;
   width: 33px;
   /* padding-left: 9px; */
 }
 
-.article-info .article-info-1{
-    font-size: 23px;
-    padding-right: 11px;
+.article-info .article-info-1 {
+  font-size: 23px;
+  padding-right: 11px;
 }
-.article-info .article-description{
+.article-info .article-description {
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
-
-.header{
+.header {
   color: dimgrey;
+}
+@media screen and (max-width: 900px) {
+  .article-title {
+    font-size: 1.5rem;
+  }
+  .home-description {
+    margin-right: 15px;
+  }
+  .home-banner {
+    padding-top: 25px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .article-box {
+    margin: 15px;
+  }
 }
