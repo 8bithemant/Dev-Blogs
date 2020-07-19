@@ -11,6 +11,7 @@ import ButtonBase from "@material-ui/core/ButtonBase";
 import Heart from "../svg/heart.svg";
 import Comment from "../svg/pharmacy.svg";
 import Date from "../svg/writing.svg";
+import {Helmet} from "react-helmet";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -78,6 +79,16 @@ export default function HomeScreen(props) {
     <div>{error}</div>
   ) : (
     <div className="main-box">
+      <Helmet>
+    <title>Hemant Joshi's Blog</title>
+        <meta name="description" content="articles.description"/> 
+        <meta property="og:title" content="articles.title"/>
+	    	<meta property="og:url" content="hemant-blogs.netlify.app"/>
+		    <meta property="og:description" content="articles.description"/>
+		    <meta property="og:image" content="articles.cover_image"/> 
+		    <meta property="og:type" content="Tech-Blog"/>
+        
+        </Helmet>
       <div className="home-banner">
         <div className="home-header">Hemant Joshi's Articles</div>
         <div className="home-description">
