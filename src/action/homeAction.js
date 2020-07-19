@@ -19,12 +19,12 @@ const listArticles =()=> async(dispatch)=>{
 
 
 
-const detailsArticle = (articleId)=> async(dispatch)=>{
+const detailsArticle = (articleSlug)=> async(dispatch)=>{
 
     try{
 
-        dispatch({type:ARTICLE_DETAILS_REQUEST, payload:articleId})
-        const {data}=await axios.get("https://dev.to/api/articles/"+ articleId)
+        dispatch({type:ARTICLE_DETAILS_REQUEST, payload:articleSlug})
+        const {data}=await axios.get("https://dev.to/api/articles/hemant/"+ articleSlug)
         dispatch({type:ARTICLE_DETAILS_SUCCESS, payload:data})
     }catch(error){
         dispatch({type:ARTICLE_DETAILS_FAIL, payload:error.message})

@@ -92,7 +92,7 @@ export default function HomeScreen(props) {
             Hemant Joshi's Articles
         </div>
         <div className="home-description">
-        <i> Hii, I am <a href="https://hemant.codes/">Hemant Joshi</a> </i>.<br /> I am 18 Year old Junior Mern Stack Developer, i share a lot of daily stuff on Twitter, make sure to follow me  <br /><a href="https://twitter.com/8bithemant/"><i>@8bithemant </i></a> 
+        <i> Hii, I am <a href="https://hemant.codes/">Hemant Joshi</a> </i>.<br /> I am 18 Year old Mern Stack Dev, i share a lot of daily stuff on Twitter, make sure to follow me  <br /><a href="https://twitter.com/8bithemant/"><i>@8bithemant </i></a> 
         </div>
         </div>
      
@@ -105,7 +105,7 @@ export default function HomeScreen(props) {
             
             articles.map(article =>
                
-              <Link className={classes.title} to ={'/articles/' + article.id + '/'} style={{textDecoration: 'none', color: 'white'}}> <div key={article.id}>
+              <Link className={classes.title} to ={'/articles/hemant/' + article.slug} style={{textDecoration: 'none', color: 'white'}}> <div key={article.id}>
                      
 
                       <div className={classes.root}>
@@ -121,9 +121,9 @@ export default function HomeScreen(props) {
                                   <div className="article-info">
                                   <img src={Heart} alt="React Logo" className="article-svg" />  <div className="article-info-1">  {article.public_reactions_count} </div>  <img src={Comment} alt="React Logo" className="article-svg" /> <div className="article-info-1"> {article.comments_count}  </div> <img src={Date} alt="React Logo" className="article-svg" /> <div className="article-info-1">{article.readable_publish_date}   </div>
                                   </div>
-                                  <Typography gutterBottom variant="subtitle1">
+                                  <div className="article-description">
                                   {article.description}
-                                  </Typography>
+                                  </div>
                                 </Grid>
                                 <Grid item>
                                   

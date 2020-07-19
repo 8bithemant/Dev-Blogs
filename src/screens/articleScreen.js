@@ -1,6 +1,5 @@
 import React, { useEffect} from 'react'
 import {detailsArticle} from '../action/homeAction'
-import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import 'github-markdown-css';
 import MarkdownView from 'react-showdown';
@@ -48,7 +47,7 @@ function ArticleScreen(props){
     const dispatch = useDispatch();
 
     useEffect(()=>{
-        dispatch(detailsArticle(props.match.params.id))
+        dispatch(detailsArticle(props.match.params.slug))
 
         return()=>{
 
@@ -63,10 +62,12 @@ function ArticleScreen(props){
         <CssBaseline />
       <HideOnScroll {...props}>
         <AppBar>
+            <div className="header">  
           <Toolbar>
               <div className="articles-header-a">     
                     Hemant </div>
           </Toolbar>
+          </div>
         </AppBar>
       </HideOnScroll>
       <Toolbar />

@@ -17,7 +17,7 @@ function App() {
     <main className="main">
       <div className="content">
         <Route path ='/' exact={true} component={HomeScreen}/>
-        <Route path='/articles/:id/' component={ArticleScreen} />
+        <Route path='/articles/hemant/:slug' component={ArticleScreen} />
       </div>
     </main>
 
