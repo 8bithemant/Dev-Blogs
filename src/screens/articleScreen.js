@@ -1,4 +1,5 @@
 import React, { useEffect} from 'react'
+import {Link} from 'react-router-dom'
 import {Helmet} from "react-helmet";
 import {detailsArticle} from '../action/homeAction'
 import { useSelector, useDispatch } from 'react-redux';
@@ -65,8 +66,9 @@ function ArticleScreen(props){
         <AppBar>
             <div className="header">  
           <Toolbar>
+            <Link to="/">
               <div className="articles-header-a">     
-                    Hemant </div>
+                    Hemant </div></Link>
           </Toolbar>
           </div>
         </AppBar>

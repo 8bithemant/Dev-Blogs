@@ -101,7 +101,6 @@ export default function HomeScreen(props) {
           <a href="https://twitter.com/8bithemant/">
             <i>@8bithemant </i>
           </a>
-          .
         </div>
       </div>
 
