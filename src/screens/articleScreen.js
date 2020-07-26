@@ -8,11 +8,13 @@ import MarkdownView from 'react-showdown';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Box from '@material-ui/core/Box';
 import Slide from '@material-ui/core/Slide';
+import CircularProgress from "@material-ui/core/CircularProgress";
+import { Twitter } from 'react-sharingbuttons'
+import ForkMeOnGithub from 'fork-me-on-github';
 // import Header from '../component/navbar'
 
 
@@ -65,8 +67,8 @@ function ArticleScreen(props){
       <HideOnScroll {...props}>
         <AppBar>
             <div className="header">  
-          <Toolbar>
-            <Link to="/">
+          <Toolbar style={{backgroundColor:"black"}}>
+            <Link to="/" style={{ textDecoration: "none", color: "white" }}>
               <div className="articles-header-a">     
                     Hemant </div></Link>
           </Toolbar>
@@ -75,25 +77,20 @@ function ArticleScreen(props){
       </HideOnScroll>
       <Toolbar />
         
-            {loading? <div>Loading..</div>:
+            {loading? <div className="loading">
+      <CircularProgress color="secondary" />
+    </div>:
             error? <div>{error}</div>:
             (    
+              
         <div className='container-sm'>
                     <div className="container-md">
-                    <img src={articles.cover_image}class="img-fluid" alt="Responsive image"/>
+                    <img src={articles.cover_image} class="img-fluid" alt="Responsive image"/>
                     </div>
                    
                 <div className="main">
-                   <ul>
-                    <li className="title-article" >
-                        <h2>
-                            {articles.title}
-                        </h2>
-                    </li>
-
-
-
-                   </ul>
+                  <div className="article-title">{articles.title}
+                        </div>
                    
                     </div>
 
@@ -123,10 +120,15 @@ function ArticleScreen(props){
     
 
         </Helmet>
-
+        <div className="share">
+          Share on  <Twitter url={"hemant-blogs.netlify.app/articles/hemant/" + articles.slug }  shareText={"Hii, check this Awesome Blog post by @8bithemant     '"+ articles.title + "'         #100daysofocde #DevCommunity"} /> ?
+        </div>
                     </div>
             )}
 
+
+    
+      
 
 
     </div>)

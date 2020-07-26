@@ -12,6 +12,7 @@ import Heart from "../svg/heart.svg";
 import Comment from "../svg/pharmacy.svg";
 import Date from "../svg/writing.svg";
 import {Helmet} from "react-helmet";
+import ForkMeOnGithub from 'fork-me-on-github';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -80,7 +81,7 @@ export default function HomeScreen(props) {
   ) : (
     <div className="main-box">
       <Helmet>
-    <title>Hemant Joshi's Blog</title>
+    <title>Hemant's Blog</title>
         <meta name="description" content="articles.description"/> 
         <meta property="og:title" content="articles.title"/>
 	    	<meta property="og:url" content="hemant-blogs.netlify.app"/>
@@ -89,6 +90,7 @@ export default function HomeScreen(props) {
 		    <meta property="og:type" content="Tech-Blog"/>
         
         </Helmet>
+        <ForkMeOnGithub repo="https://github.com/8bithemant/Dev-Blogs" colorOctocat="white" isPride/>
       <div className="home-banner">
         <div className="home-header">Hemant Joshi's Articles</div>
         <div className="home-description">
@@ -104,14 +106,13 @@ export default function HomeScreen(props) {
         </div>
       </div>
 
-      <div className="article-box">
+      <div className="articles-box">
         {articles.map((article) => (
           <Link
             className={classes.title}
             to={"/articles/hemant/" + article.slug}
             style={{ textDecoration: "none", color: "white" }}
           >
-            {" "}
             <div key={article.id}>
               <div className={classes.root}>
                 <Paper className={classes.paper}>
@@ -119,36 +120,35 @@ export default function HomeScreen(props) {
                     <Grid item xs={12} sm container>
                       <Grid item xs container direction="column" spacing={2}>
                         <Grid item xs>
-                          <div className="article-title">{article.title}</div>
-                          <div className="article-info">
+                          <div className="articles-title">{article.title}</div>
+                          <div className="articles-info">
                             <img
                               src={Heart}
                               alt="React Logo"
-                              className="article-svg"
-                            />{" "}
-                            <div className="article-info-1">
-                              {" "}
-                              {article.public_reactions_count}{" "}
-                            </div>{" "}
+                              className="articles-svg"
+                            />
+                            <div className="articles-info-1">
+                              {article.public_reactions_count}
+                            </div>
                             <img
                               src={Comment}
                               alt="React Logo"
-                              className="article-svg"
-                            />{" "}
-                            <div className="article-info-1">
-                              {" "}
-                              {article.comments_count}{" "}
-                            </div>{" "}
+                              className="articles-svg"
+                            />
+                            <div className="articles-info-1">
+                              
+                              {article.comments_count}
+                            </div>
                             <img
                               src={Date}
                               alt="React Logo"
-                              className="article-svg"
+                              className="articles-svg"
                             />{" "}
-                            <div className="article-info-1">
+                            <div className="articles-info-1">
                               {article.readable_publish_date}{" "}
                             </div>
                           </div>
-                          <div className="article-description">
+                          <div className="articles-description">
                             {article.description}
                           </div>
                         </Grid>
@@ -158,19 +158,6 @@ export default function HomeScreen(props) {
                   </Grid>
                 </Paper>
               </div>
-
-              {/* <div className="main-box">
-                    <div className="article-title">
-                        <Link className="title" to ={'/articles/' + article.id + '/'}>{article.title}</Link>
-                                </div>
-                        <div className="article-date">{article.readable_publish_date}</div>
-                        <div className="article-comments">{article.comments_count}</div>
-                        <div className="article-reactions">{article.positive_reactions_count}</div>
-                        
-
-                        
-                        <div className="article-tags">Tags: #{article.tag_list[0]},  #{article.tag_list[1]}, #{article.tag_list[2]}</div>
-                    </div> */}
             </div>
           </Link>
         ))}
