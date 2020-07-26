@@ -79,8 +79,7 @@ function ArticleScreen(props){
         
             { loading? <div className="loading">
       <CircularProgress color="secondary" />
-    </div>:
-            error? <div>{error}</div>:
+    </div>: error ? (<div style={{textAlign:"center"}}><h1> {error}</h1></div>):
             (    
               
         <div className='container-sm'>

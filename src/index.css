@@ -34,6 +34,10 @@ body {
   margin-left: 48%;
 }
 
+.loading-1{
+  margin-left: 48%;
+}
+
 /* ----------------------Share----------------------- */
 
 .share{
@@ -246,7 +250,7 @@ body {
     font-family: "Roboto", sans-serif;
     color: #777777;
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     }
 
 

@@ -37,7 +37,7 @@ export default function Footer() {
 							<div className="footer-5">The website is not completely built.</div>
                             <Link  target="_blank" href="https://www.buymeacoffee.com/hemant"><img src={require('../img/buymeacoffee.png')} className="bmc-button"/></Link>
 							<div className="footer-6"> 
-							Source code on my github ├── <Link href="https://github.com/8bithemant/Responsive-Portfolio" target="_blank">Hemant Joshi </Link>
+							Source code on my github ├── <Link href="https://github.com/8bithemant/Responsive-Portfolio" target="_blank" style={{ textDecoration: "none", color: "white" }}>Hemant Joshi </Link>
 							</div><div className="footer-7">Make sure to 🌟 </div>
         			</div>	
                     </aside>
@@ -50,7 +50,7 @@ export default function Footer() {
         					<div className="footer-8">Let's Connect.</div>
         					<div className="social">
 								<li><Link href="https://github.com/8bitHemant"><img src={require('../img/github.svg')} style={{height:"30px", width:"25px"}}/></Link></li>
-                                <li><Link href="https://github.com/8bitHemant"><img src={require('../img/twitter.svg')} style={{height:"30px", width:"25px"}}/></Link></li>
+                                <li><Link href="https://twitter.com/8bitHemant"><img src={require('../img/twitter.svg')} style={{height:"30px", width:"25px"}}/></Link></li>
                                 <li><Link href="https://github.com/8bitHemant"><img src={require('../img/linkedin.svg')} style={{height:"30px", width:"25px"}}/></Link></li>
                             </div>
 							<div className="footer-9" >I may be slow to respond!</div> 
