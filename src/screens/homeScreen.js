@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { listArticles } from "../action/homeAction";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
@@ -13,6 +13,7 @@ import Comment from "../svg/pharmacy.svg";
 import Date from "../svg/writing.svg";
 import {Helmet} from "react-helmet";
 import ForkMeOnGithub from 'fork-me-on-github';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -65,12 +66,19 @@ export default function HomeScreen(props) {
 
   const dispatch = useDispatch();
   const classes = useStyles();
+  
+
+  const handleClick=(more) =>{
+    setMore(!more)
+  }
 
   useEffect(() => {
     dispatch(listArticles());
 
     return () => {};
   }, []);
+  const [more, setMore] = useState(false)
+  const numberOfArticles = more ? articles.length : 10;
 
   return loading ? (
     <div className="loading">
@@ -95,8 +103,7 @@ export default function HomeScreen(props) {
         <div className="home-header">Hemant Joshi's Articles</div>
         <div className="home-description">
           <i>
-            {" "}
-            Hii, I am <a href="https://hemant.codes/">Hemant Joshi</a>{" "}
+            Hii, I am <a href="https://hemant.codes/">Hemant Joshi</a>
           </i>
           .<br /> I am 18 Year old Mern Stack Dev, I share a lot of daily
           content on Twitter, be sure to follow me <br />
@@ -107,7 +114,7 @@ export default function HomeScreen(props) {
       </div>
 
       <div className="articles-box">
-        {articles.map((article) => (
+        {articles.slice(0, numberOfArticles).map((article) => (
           <Link
             className={classes.title}
             to={"/articles/hemant/" + article.slug}
@@ -160,7 +167,16 @@ export default function HomeScreen(props) {
               </div>
             </div>
           </Link>
-        ))}
+        )
+        
+        )
+        
+        }
+      </div>
+      <div className="loadmore-button">
+        <Button onClick={()=>handleClick(more)} variant="contained" color="secondary" className="loadmore">
+        {more ?  "Show Less":"Show More"}
+      </Button>
       </div>
     </div>
   );

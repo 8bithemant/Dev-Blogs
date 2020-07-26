@@ -123,6 +123,16 @@ body {
   }
 }
 
+.loadmore-button{
+  
+  text-align: center;
+}
+
+/* .loadmore{
+  justify-content: center;
+  
+} */
+
 /* ------------------------Article--------------------- */
 .container-md{
   margin-bottom:5%;
@@ -137,3 +147,5 @@ body {
   .article-title {
     font-size: 30px;
   }}
+
+
