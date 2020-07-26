@@ -77,7 +77,7 @@ function ArticleScreen(props){
       </HideOnScroll>
       <Toolbar />
         
-            {loading? <div className="loading">
+            { loading? <div className="loading">
       <CircularProgress color="secondary" />
     </div>:
             error? <div>{error}</div>:

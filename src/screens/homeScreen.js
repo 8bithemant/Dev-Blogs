@@ -15,6 +15,7 @@ import {Helmet} from "react-helmet";
 import ForkMeOnGithub from 'fork-me-on-github';
 import Button from '@material-ui/core/Button';
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -80,13 +81,30 @@ export default function HomeScreen(props) {
   const [more, setMore] = useState(false)
   const numberOfArticles = more ? articles.length : 10;
 
-  return loading ? (
+  return (
+    loading ? (
+      
     <div className="loading">
       <CircularProgress color="secondary" />
-    </div>
-  ) : error ? (
-    <div>{error}</div>
-  ) : (
+      </div>
+  ) : error ? (<div>
+    <ForkMeOnGithub repo="https://github.com/8bithemant/Dev-Blogs" colorOctocat="white" isPride/>
+    <div className="home-banner">
+        <div className="home-header">Hemant Joshi's Articles</div>
+        <div className="home-description">
+          <i>
+            Hii, I am <a href="https://hemant.codes/">Hemant Joshi</a>
+          </i>
+          .<br /> I am 18 Year old Mern Stack Dev, I share a lot of daily
+          content on Twitter, be sure to follow me <br />
+          <a href="https://twitter.com/8bithemant/">
+            <i>@8bithemant </i>
+          </a>
+        </div>
+      </div> 
+    <div style={{textAlign:"center"}}><h1> {error}</h1></div>
+
+    </div>   ) : (
     <div className="main-box">
       <Helmet>
     <title>Hemant's Blog</title>
@@ -96,7 +114,6 @@ export default function HomeScreen(props) {
 		    <meta property="og:description" content="articles.description"/>
 		    <meta property="og:image" content="articles.cover_image"/> 
 		    <meta property="og:type" content="Tech-Blog"/>
-        
         </Helmet>
         <ForkMeOnGithub repo="https://github.com/8bithemant/Dev-Blogs" colorOctocat="white" isPride/>
       <div className="home-banner">
@@ -178,6 +195,8 @@ export default function HomeScreen(props) {
         {more ?  "Show Less":"Show More"}
       </Button>
       </div>
+
+        
     </div>
-  );
+  ))
 }
