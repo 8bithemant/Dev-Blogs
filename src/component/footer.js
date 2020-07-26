@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from '@material-ui/core'
 
 export default function Footer() {
     return (
@@ -13,14 +14,15 @@ export default function Footer() {
 					<aside className="col-lg-5 col-sm-6">
         				<div className="f_widget ab_widget">
         					<div className="f_title">
-        						<h2>Hemant...</h2>
+        						<div className="footer-main">Hemant...</div>
         					</div>
-							 <h4> Hii, I am 18 years old.. </h4>
-							<h2> Got a project? Lets connect, i work to learn!</h2>
+
+							<div className="footer-1"> Hii, I am 18 years old.. </div>
+							<div className="footer-2"> Got a project? Lets connect, i work to learn!</div>
 														
-							NO Copyright Issue, Feel free to copy. If you need any help, ping me! 
+							<div className="footer-3">NO Copyright Issue, Feel free to copy. If you need any help, ping me!</div>
 							
-							<p><h4>Made with ❤️️ and JavaScript in India.</h4></p>
+							<div className="footer-4">Made with ❤️️ and JavaScript in India.</div>
 							
         				</div>
         			</aside>
@@ -30,31 +32,28 @@ export default function Footer() {
 					<aside className="col-lg-5 col-sm-6">
         				<div className="f_widget news_widget">
         					<div className="f_title">
-        						<h2>Sponsor</h2>
+        						<div className="footer-main">Hii,</div>
         					</div>
-							<h3>The website is not completely built.</h3>
-							{/* <a className="bmc-button" target="_blank" href="https://www.buymeacoffee.com/hemant"></a><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" target="_blank" alt="Buy me a coffee" style="margin-left: 11px;"><span style="margin-left:18px">Buy me a coffee</span> */}
-							<div className="asside1"> 
-							<h4> Source code on my github </h4><a href="https://github.com/8bithemant/Responsive-Portfolio" target="_blank"  >Hemant Joshi </a>
-							<h3>Make sure to 🌟</h3> </div>
+							<div className="footer-5">The website is not completely built.</div>
+                            <Link  target="_blank" href="https://www.buymeacoffee.com/hemant"><img src={require('../img/buymeacoffee.png')} className="bmc-button"/></Link>
+							<div className="footer-6"> 
+							Source code on my github ├── <Link href="https://github.com/8bithemant/Responsive-Portfolio" target="_blank">Hemant Joshi </Link>
+							</div><div className="footer-7">Make sure to 🌟 </div>
         			</div>	
                     </aside>
         			
         			<div className="col-lg-2">
         				<aside className="f_widget social_widget">
         					<div className="f_title">
-        						<h2>Social</h2>
+        						<div className="footer-main">Social</div>
         					</div>
-        					<p><h3>Let's Connect. </h3></p>
-        					<ul className="list">
-        						
-								<li><a href="https://twitter.com/8bitHemant" ><i className="fa fa-twitter"></i></a></li>
-								<li><a href="https://github.com/8bithemant" ><i className="fa fa-github"></i></a></li>
-        						<li><a href="linkedin.com/in/hemant-j-85518a195"><i className="fa fa-linkedin"></i></a></li>
-								
-							</ul>
-
-							<h3 >I may be slow to respond!</h3> 
+        					<div className="footer-8">Let's Connect.</div>
+        					<div className="social">
+								<li><Link href="https://github.com/8bitHemant"><img src={require('../img/github.svg')} style={{height:"30px", width:"25px"}}/></Link></li>
+                                <li><Link href="https://github.com/8bitHemant"><img src={require('../img/twitter.svg')} style={{height:"30px", width:"25px"}}/></Link></li>
+                                <li><Link href="https://github.com/8bitHemant"><img src={require('../img/linkedin.svg')} style={{height:"30px", width:"25px"}}/></Link></li>
+                            </div>
+							<div className="footer-9" >I may be slow to respond!</div> 
         				</aside>
         			</div>
 
