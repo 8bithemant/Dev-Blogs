@@ -1,8 +1,8 @@
 
-
+<h1 align="center">Dev Blogs</h1>
 <p align="center">
 <img src="https://dev-to-uploads.s3.amazonaws.com/i/w352xfxy8kyc1micn5pz.png" />
-   <h1 align="center">Dev Blogs</h1>
+   
    <p align="center">Dev Blogs is built in React Redux which is used to publish your Dev.to Blogs on your custom page.</p>
    </p>
 
