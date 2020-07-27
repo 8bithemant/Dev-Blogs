@@ -1,9 +1,28 @@
 
-![Image](https://dev-to-uploads.s3.amazonaws.com/i/w352xfxy8kyc1micn5pz.png)
+
+<p align="center">
+<img src="https://dev-to-uploads.s3.amazonaws.com/i/w352xfxy8kyc1micn5pz.png" />
+   <h1 align="center">Dev Blogs</h1>
+   <p align="center">Dev Blogs is built in React Redux which is used to publish your Dev.to Blogs on your custom page.</p>
+   </p>
 
 
-
-Hii, this is a Blog webiste with Dev.to As the blogs source built on React-Redux and the great contribution's of fellow Developers.
+<p align="center">
+  <a href="https://app.netlify.com/sites/hemant-blog/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/c5b6a364-e4d6-4b81-a09b-628e39e84d5b/deploy-status"></img>
+  </a>
+  <a href="https://github.com/8bithemant/Dev-Blogs/issues">
+    <img src="https://img.shields.io/github/issues/8bithemant/Dev-Blogs?style=flat-square"></img>
+  </a>
+   <a href="https://github.com/8bithemant/Dev-Blogs/pulls">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/8bithemant/Dev-Blogs?style=flat-square" />
+   </a>
+</p>
+<p align="center">
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/8bithemant/Dev-Blogs">
+   <img alt="Deploy Netlify" src="https://www.netlify.com/img/deploy/button.svg"/>
+   </a>
+</p>
 
 
 >Preview 
@@ -18,7 +37,7 @@ To customize the blog according to your Dev user id simply follow the Readme (Th
 
 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c5b6a364-e4d6-4b81-a09b-628e39e84d5b/deploy-status)](https://app.netlify.com/sites/hemant-blog/deploys)
+
 
 ## Getting Started?
 
