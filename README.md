@@ -20,6 +20,13 @@
       <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/8bithemant/Dev-Blogs?style=flat-square" />
    </a>
 </p>
+
+<p align="center">
+   <a aria-label="License" href="https://github.com/8bithemant/Dev-Blogs/license.md">
+    <img alt="" src="https://img.shields.io/npm/l/next.svg?style=for-the-badge&labelColor=000000">
+   </a>
+  
+  </p>
 <p align="center">
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/8bithemant/Dev-Blogs">
    <img alt="Deploy Netlify" src="https://www.netlify.com/img/deploy/button.svg"/>
