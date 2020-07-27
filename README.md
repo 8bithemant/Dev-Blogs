@@ -3,6 +3,16 @@
 
 
 
+Hii, this is a Blog webiste with Dev.to As the blogs source built on React-Redux and the great contribution's of fellow Developers.
+
+
+>Preview 
+[hemant-blog.netlify.app](hemant-blog.netlify.app)
+
+
+To customize the blog according to your Dev user id simply follow the Readme (The Steps Below)
+
+
 
 
 
