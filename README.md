@@ -3,7 +3,9 @@
 <p align="center">
 <img src="https://dev-to-uploads.s3.amazonaws.com/i/w352xfxy8kyc1micn5pz.png" />
    
-   <p align="center">Dev Blogs is built in React Redux which is used to publish your Dev.to Blogs on your custom page.</p>
+   <p align="center">
+   <h2> Dev Blogs is built in React Redux which is used to publish your Dev.to Blogs on your custom page. </h2>
+</p>
    </p>
 
 
