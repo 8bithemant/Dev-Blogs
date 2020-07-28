@@ -120,7 +120,7 @@ function ArticleScreen(props){
 
         </Helmet>
         <div className="share">
-          Share on  <Twitter url={window.location.href}  shareText={"Hii, check this Awesome Blog post by @8bithemant     '"+ articles.title + "'    #100daysofocde #DevCommunity                 "} /> ?
+          Share on  <Twitter url={window.location.href}  shareText={"Hii, check this Awesome Blog post by @8bithemant     '"+ articles.title + "'    #100daysofocde #DevCommunity  "} /> 
         </div>
                     </div>
             )}

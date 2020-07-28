@@ -51,7 +51,7 @@ export default function Footer() {
         					<div className="social">
 								<li><Link href="https://github.com/8bitHemant"><img src={require('../img/github.svg')} style={{height:"30px", width:"25px"}}/></Link></li>
                                 <li><Link href="https://twitter.com/8bitHemant"><img src={require('../img/twitter.svg')} style={{height:"30px", width:"25px"}}/></Link></li>
-                                <li><Link href="https://github.com/8bitHemant"><img src={require('../img/linkedin.svg')} style={{height:"30px", width:"25px"}}/></Link></li>
+                                <li><Link href="https://linkedin.com/in/hemant-j-85518a195"><img src={require('../img/linkedin.svg')} style={{height:"30px", width:"25px"}}/></Link></li>
                             </div>
 							<div className="footer-9" >I may be slow to respond!</div> 
         				</aside>
