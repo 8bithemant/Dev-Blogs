@@ -35,7 +35,7 @@
 
 
 >Preview 
-[hemant-blog.netlify.app](hemant-blog.netlify.app)
+[hemant-blog.netlify.app](https://hemant-blog.netlify.app)
 
 
 To customize the blog according to your Dev user id simply follow the Readme (The Steps Below)
