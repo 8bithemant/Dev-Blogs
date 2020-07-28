@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { listArticles } from "../action/homeAction";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
