@@ -1,16 +1,19 @@
-import React from 'react'
+import React from "react";
 
 import CircularProgress from "@material-ui/core/CircularProgress";
 
-import ForkMeOnGithub from 'fork-me-on-github';
-import { Link, BrowserRouter, Route } from 'react-router-dom'
-
+import ForkMeOnGithub from "fork-me-on-github";
+import { Link } from "react-router-dom";
 
 function Notfound() {
-    return (
-        <div>
-            <ForkMeOnGithub repo="https://github.com/8bithemant/Dev-Blogs" colorOctocat="white" isPride/>
-    <div className="home-banner">
+  return (
+    <div>
+      <ForkMeOnGithub
+        repo="https://github.com/8bithemant/Dev-Blogs"
+        colorOctocat="white"
+        isPride
+      />
+      <div className="home-banner">
         <div className="home-header">Hemant Joshi's Articles</div>
         <div className="home-description">
           <i>
@@ -24,15 +27,21 @@ function Notfound() {
         </div>
       </div>
 
-      <div style={{textAlign:"center" ,fontSize:"40px", fontWeight:"900"}}>404 </div>
-      <Link to='/' style={{textAlign:"center" ,fontSize:"40px", fontWeight:"900"}}><div style={{textAlign:'center'}}>Back to Home?</div> </Link>
-      
+      <div style={{ textAlign: "center", fontSize: "40px", fontWeight: "900" }}>
+        404{" "}
+      </div>
+      <Link
+        to="/"
+        style={{ textAlign: "center", fontSize: "40px", fontWeight: "900" }}
+      >
+        <div style={{ textAlign: "center" }}>Back to Home?</div>{" "}
+      </Link>
 
       <div className="loading-1">
-      <CircularProgress color="secondary" />
+        <CircularProgress color="secondary" />
       </div>
-        </div>
-    )
+    </div>
+  );
 }
 
-export default Notfound
+export default Notfound;
