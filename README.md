@@ -147,13 +147,11 @@ Wow, thanks a lot feel free to make a PR, even a simple update will be helpful
 
 8. Add the changes to another branch:
 
-   ```
-   git checkout master
-   git add .
-   git commit -m "Your commit message"
-   git pull upstream master && git push -u origin master
-   git checkout -b hotfix/name-of-change
-   ```
+   > git checkout master
+   > git add .
+   > git commit -m "Your commit message"
+   > git pull upstream master && git push -u origin master
+   > git checkout -b hotfix/name-of-change
 
 9. Now create the pull request: `git push -u origin hotfix/name-of-change`
 
