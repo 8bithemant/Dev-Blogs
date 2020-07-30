@@ -4,6 +4,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 
 import ForkMeOnGithub from "fork-me-on-github";
 import { Link } from "react-router-dom";
+import Footer from "../component/footer"
 
 function Notfound() {
   return (
@@ -40,6 +41,8 @@ function Notfound() {
       <div className="loading-1">
         <CircularProgress color="secondary" />
       </div>
+
+      <Footer />
     </div>
   );
 }
