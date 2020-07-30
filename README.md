@@ -1,13 +1,11 @@
-
 <h1 align="center">Dev Blogs</h1>
 <p align="center">
 <img src="https://dev-to-uploads.s3.amazonaws.com/i/w352xfxy8kyc1micn5pz.png" />
    
    <p align="center">
-   <h2> Dev Blogs is built in React Redux which is used to publish your Dev.to Blogs on your custom page. </h2>
+   <h2> Dev Blogs is built in React and Redux which is used to publish your Dev.to Blogs on your custom page. </h2>
 </p>
    </p>
-
 
 <p align="center">
   <a href="https://app.netlify.com/sites/hemant-blog/deploys" target="_blank">
@@ -33,20 +31,10 @@
    </a>
 </p>
 
-
->Preview 
-[hemant-blog.netlify.app](https://hemant-blog.netlify.app)
-
+> Preview
+> [hemant-blog.netlify.app](https://hemant-blog.netlify.app)
 
 To customize the blog according to your Dev user id simply follow the Readme (The Steps Below)
-
-
-
-
-
-
-
-
 
 ## Getting Started?
 
@@ -55,11 +43,11 @@ Star the Repo and click the below button.
 
 Click on the above button and config with you Github in Netlify.
 
-#### After succesfull config.
+#### After successful config.
 
 Simply go to your profile which would have new Repo, and clone it to your local system
 
-#### Visit the follwoing folder after clone.
+#### Visit the following folder after clone.
 
 `src/action/homeAction.js`
 
@@ -77,9 +65,20 @@ or
 
 Cheers You Blog is live on your System.
 
+If you have any issues with already existing remotes, in your file explorer hit show
+hidden files and delete the .git folder
+
+_This will lock you into the current version of the app_
+
+Then redo the git process with git init.
+
 Now config the blog with github and push it to your github Repo.
 
-`git push origin master` here you site is live..
+`git push origin master`
+
+Then you can run `npm run build`
+
+Then just login to netlify and deploy from git.
 
 ---
 
@@ -89,7 +88,7 @@ Now config the blog with github and push it to your github Repo.
 
 git clone https://github.com/8bithemant/Dev-Blogs.git
 
-#### Visit the follwoing folder after clone.
+#### Visit the following folder after clone.
 
 `src/action/homeAction.js`
 
@@ -107,7 +106,7 @@ or
 
 Cheers You Blog is live on your System.
 
-#### Hit the folwoing commands..
+#### Hit the following commands..
 
 `yarn build`
 
@@ -117,7 +116,7 @@ Cheers You Blog is live on your System.
 
 ---
 
-## Contibution?
+## Contribution?
 
 Wow, thanks a lot feel free to make a PR, even a simple update will be helpful
 
@@ -148,13 +147,11 @@ Wow, thanks a lot feel free to make a PR, even a simple update will be helpful
 
 8. Add the changes to another branch:
 
-   ```
-   git checkout master
-   git add .
-   git commit -m "Your commit message"
-   git pull upstream master && git push -u origin master
-   git checkout -b hotfix/name-of-change
-   ```
+   > git checkout master
+   > git add .
+   > git commit -m "Your commit message"
+   > git pull upstream master && git push -u origin master
+   > git checkout -b hotfix/name-of-change
 
 9. Now create the pull request: `git push -u origin hotfix/name-of-change`
 
