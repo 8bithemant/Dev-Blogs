@@ -43,7 +43,7 @@ Star the Repo and click the below button.
 
 Click on the above button and config with you Github in Netlify.
 
-#### After succesfull config.
+#### After successful config.
 
 Simply go to your profile which would have new Repo, and clone it to your local system
 
@@ -65,9 +65,20 @@ or
 
 Cheers You Blog is live on your System.
 
+If you have any issues with already existing remotes, in your file explorer hit show
+hidden files and delete the .git folder
+
+_This will lock you into the current version of the app_
+
+Then redo the git process with git init.
+
 Now config the blog with github and push it to your github Repo.
 
-`git push origin master` here you site is live..
+`git push origin master`
+
+Then you can run `npm run build`
+
+Then just login to netlify and deploy from git.
 
 ---
 
