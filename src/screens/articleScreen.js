@@ -15,6 +15,7 @@ import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Slide from "@material-ui/core/Slide";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { Twitter } from "react-sharingbuttons";
+import config from '../DevtoConfig'
 // import ForkMeOnGithub from 'fork-me-on-github';
 // import Header from '../component/navbar'
 
@@ -61,7 +62,7 @@ function ArticleScreen(props) {
           <div className="header">
             <Toolbar style={{ backgroundColor: "black" }}>
               <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-                <div className="articles-header-a">Hemant </div>
+                <div className="articles-header-a">{config.bannerName} </div>
               </Link>
             </Toolbar>
           </div>
@@ -114,9 +115,7 @@ function ArticleScreen(props) {
             <Twitter
               url={window.location.href}
               shareText={
-                "Hii, check this Awesome Blog post by @8bithemant     '" +
-                articles.title +
-                "'    #100daysofocde #DevCommunity  "
+                `Hii, check this Awesome Blog post by @${config.userNameTwitter} #100daysofocde #DevCommunity`
               }
             />
           </div>

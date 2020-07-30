@@ -16,7 +16,7 @@ function App() {
         <Switch>
           <Route path="/" exact={true} component={HomeScreen} />
           <Route
-            path="/articles/hemant/:slug"
+            path='/articles/:slug'
             exact={true}
             component={ArticleScreen}
           />

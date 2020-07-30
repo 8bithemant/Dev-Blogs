@@ -6,14 +6,13 @@ import { makeStyles } from "@material-ui/core";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-// import Typography from "@material-ui/core/Typography";
-// import ButtonBase from "@material-ui/core/ButtonBase";
 import Heart from "../svg/heart.svg";
 import Comment from "../svg/pharmacy.svg";
 import Date from "../svg/writing.svg";
 import { Helmet } from "react-helmet";
 import ForkMeOnGithub from "fork-me-on-github";
 import Button from "@material-ui/core/Button";
+import config from '../DevtoConfig'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -89,17 +88,17 @@ export default function HomeScreen(props) {
         repo="https://github.com/8bithemant/Dev-Blogs"
         colorOctocat="white"
         isPride
+        alt="fork"
       />
       <div className="home-banner">
-        <div className="home-header">Hemant Joshi's Articles</div>
+        <div className="home-header">`${config.bannerName}`'s Articles</div>
         <div className="home-description">
           <i>
-            Hii, I am <a href="https://hemant.codes/">Hemant Joshi</a>
+            Hii, I am <a href={config.website}>`${config.bannerName}</a>
           </i>
-          .<br /> I am 18 Year old Mern Stack Dev, I share a lot of daily
-          content on Twitter, be sure to follow me <br />
-          <a href="https://twitter.com/8bithemant/">
-            <i>@8bithemant </i>
+          .<br />  {config.about} <br />
+          <a href={config.twitter}>
+            <i>twitter</i>
           </a>
         </div>
       </div>
@@ -142,7 +141,7 @@ export default function HomeScreen(props) {
           <Link
             key={index}
             className={classes.title}
-            to={"/articles/hemant/" + article.slug}
+            to={`/articles/${article.slug}`}
             style={{ textDecoration: "none", color: "white" }}
           >
             <div key={article.id}>
