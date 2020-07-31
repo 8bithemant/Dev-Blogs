@@ -4,6 +4,7 @@
    
    <p align="center">
    <h2 style="margin:auto;"> Dev Blogs is built in React and Redux which is used to publish your Dev.to Blogs on a custom page. </h2>
+   ![](https://visitor-badge.glitch.me/badge?page_id=8bithemant.Dev-Blogs)
 </p>
    </p>
 
