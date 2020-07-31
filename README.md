@@ -3,7 +3,7 @@
 <img src="https://dev-to-uploads.s3.amazonaws.com/i/w352xfxy8kyc1micn5pz.png" />
    
    <p align="center">
-   <h2> Dev Blogs is built in React and Redux which is used to publish your Dev.to Blogs on your custom page. </h2>
+   <h2 style="margin:auto;"> Dev Blogs is built in React and Redux which is used to publish your Dev.to Blogs on a custom page. </h2>
 </p>
    </p>
 
@@ -36,26 +36,25 @@
 
 To customize the blog according to your Dev user id simply follow the Readme (The Steps Below)
 
-## Getting Started?
+# Getting Started?
 
-Star the Repo and click the below button.
+Star the Repo and click the button here >
 [![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/8bithemant/Dev-Blogs)
 
 Click on the above button and config with you Github in Netlify.
 
-#### After successful config.
+### After successful netlify config.
 
 Simply go to your profile which would have new Repo, and clone it to your local system
 
-#### Visit the following folder after clone.
+## <u>Visit the following folder after clone.</u>
 
-`src/action/homeAction.js`
+`src/DevtoConfig.js`
 
-Change the username from Hemant to your Dev.to Username in line **11**
+Then change the each section to your details.
+Don't forget the https:// that is used for redirects
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/qyiblhyu82371mnbavf9.png)
-
-#### In your terminal
+## In your terminal
 
 Run the following command in you terminal.
 
@@ -63,7 +62,7 @@ Run the following command in you terminal.
 or
 `yarn && yarn start`
 
-Cheers You Blog is live on your System.
+Cheers You Blog is live on your System. And on localhost.
 
 If you have any issues with already existing remotes, in your file explorer hit show
 hidden files and delete the .git folder
@@ -72,17 +71,21 @@ _This will lock you into the current version of the app_
 
 Then redo the git process with git init.
 
+Then you can run `npm run build`
+
+Then git add and commit.
+
 Now config the blog with github and push it to your github Repo.
 
 `git push origin master`
 
-Then you can run `npm run build`
+Then just login to netlify you should see the deploy.
 
-Then just login to netlify and deploy from git.
+Give it a couple seconds and see your site.
 
 ---
 
-## Alternate?
+# Alternatively...
 
 #### Clone the repository
 
@@ -90,33 +93,35 @@ git clone https://github.com/8bithemant/Dev-Blogs.git
 
 #### Visit the following folder after clone.
 
-`src/action/homeAction.js`
+`src/DevtoConfig.js`
 
-Change the username from Hemant to your Dev.to Username in line **11**
+Here you can edit the values to load your own data.
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/qyiblhyu82371mnbavf9.png)
+- add your dev.to username to username
+- and then the others.
 
 #### In your terminal
 
-Run the following command in you terminal.
+Run the following command:
 
 `npm i && npm start`
 or
 `yarn && yarn start`
 
+This will install all thats needed and start a server.
 Cheers You Blog is live on your System.
 
 #### Hit the following commands..
 
 `yarn build`
 
-## Drop the build folder to Netlify and hurray your page is live...
+or
 
----
+`npm build`
 
----
+### Drop the build folder to Netlify and hurray your page is live...
 
-## Contribution?
+# Contribution?
 
 Wow, thanks a lot feel free to make a PR, even a simple update will be helpful
 
@@ -147,11 +152,11 @@ Wow, thanks a lot feel free to make a PR, even a simple update will be helpful
 
 8. Add the changes to another branch:
 
-   > git checkout master
-   > git add .
-   > git commit -m "Your commit message"
-   > git pull upstream master && git push -u origin master
-   > git checkout -b hotfix/name-of-change
+   - > git checkout master
+   - > git add .
+   - > git commit -m "Your commit message"
+   - > git pull upstream master && git push -u origin master
+   - > git checkout -b hotfix/name-of-change
 
 9. Now create the pull request: `git push -u origin hotfix/name-of-change`
 
