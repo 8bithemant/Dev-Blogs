@@ -12,16 +12,16 @@ import Date from "../svg/writing.svg";
 import { Helmet } from "react-helmet";
 import ForkMeOnGithub from "fork-me-on-github";
 import Button from "@material-ui/core/Button";
-import config from '../DevtoConfig'
+import config from "../DevtoConfig";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     "& > * + *": {
-      marginLeft: "50px"
+      marginLeft: "50px",
     },
     flexGrow: 1,
-    marginBottom: "7%"
+    marginBottom: "7%",
   },
 
   paper: {
@@ -30,43 +30,43 @@ const useStyles = makeStyles(theme => ({
     minWidth: "100%",
     backgroundColor: "#ffffff",
     boxShadow: "0.5px #e4e4e4 solid",
-    position: "relative"
+    position: "relative",
   },
   image: {
     width: 128,
-    height: 128
+    height: 128,
   },
   img: {
     margin: "auto",
     display: "block",
     maxWidth: "100%",
-    maxHeight: "100%"
+    maxHeight: "100%",
   },
   title: {
     fontSize: "25px",
     fontFamily: "Big Caslon,Book Antiqua,Palatino Linotype,Georgia,serif",
-    color: "#222222"
+    color: "#222222",
   },
   svg: {
     height: "30px",
     width: "24px",
-    paddingLeft: "9px"
+    paddingLeft: "9px",
   },
   svgcomment: {
     paddingLeft: "10px",
     height: "45px",
-    width: "26px"
-  }
+    width: "26px",
+  },
 }));
 
 export default function HomeScreen(props) {
-  const articleList = useSelector(state => state.articleList);
+  const articleList = useSelector((state) => state.articleList);
   const { articles, loading, error } = articleList;
 
   const dispatch = useDispatch();
   const classes = useStyles();
 
-  const handleClick = more => {
+  const handleClick = (more) => {
     setMore(!more);
   };
 
@@ -96,9 +96,9 @@ export default function HomeScreen(props) {
           <i>
             Hii, I am <a href={config.website}>{config.bannerName}</a>
           </i>
-          .<br />  {config.about} <br />
+          .<br /> {config.about} <br />
           <a href={config.twitter}>
-            <i>twitter</i>
+            <i>{config.userNameTwitter}</i>
           </a>
         </div>
       </div>
@@ -109,7 +109,7 @@ export default function HomeScreen(props) {
   ) : (
     <div className="main-box">
       <Helmet>
-        <title>{config.bannerName} Blog</title>
+        <title>{config.bannerName}'s Blog</title>
         <meta name="description" content="articles.description" />
         <meta property="og:title" content="articles.title" />
         <meta property="og:url" content="hemant-blogs.netlify.app" />
@@ -128,9 +128,9 @@ export default function HomeScreen(props) {
           <i>
             Hii, I am <a href={config.website}>{config.bannerName}</a>
           </i>
-          .<br />  {config.about} <br />
-          <a href={config.twitter}>
-            <i>twitter</i>
+          .<br /> {config.about} <br />
+          <a href="https://twitter.com/8bithemant/">
+            <i>{config.userNameTwitter}</i>
           </a>
         </div>
       </div>

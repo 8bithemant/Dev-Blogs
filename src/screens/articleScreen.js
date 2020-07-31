@@ -15,7 +15,7 @@ import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Slide from "@material-ui/core/Slide";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { Twitter } from "react-sharingbuttons";
-import config from '../DevtoConfig'
+import config from "../DevtoConfig";
 // import ForkMeOnGithub from 'fork-me-on-github';
 // import Header from '../component/navbar'
 
@@ -39,11 +39,11 @@ HideOnScroll.propTypes = {
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
    */
-  window: PropTypes.func
+  window: PropTypes.func,
 };
 
 function ArticleScreen(props) {
-  const articleDetails = useSelector(state => state.articleDetails);
+  const articleDetails = useSelector((state) => state.articleDetails);
   const { articles, loading, error } = articleDetails;
 
   const dispatch = useDispatch();
@@ -114,9 +114,7 @@ function ArticleScreen(props) {
             Share on{" "}
             <Twitter
               url={window.location.href}
-              shareText={
-                `Hii, check this Awesome Blog post by @${config.userNameTwitter} #100daysofocde #DevCommunity`
-              }
+              shareText={`Hii, check this Awesome Blog post by @ ${config.userNameTwitter} #100daysofocde #DevCommunity`}
             />
           </div>
         </div>
