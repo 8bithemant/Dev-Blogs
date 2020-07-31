@@ -91,10 +91,10 @@ export default function HomeScreen(props) {
         alt="fork"
       />
       <div className="home-banner">
-        <div className="home-header">`${config.bannerName}`'s Articles</div>
+        <div className="home-header">{config.bannerName}'s Articles</div>
         <div className="home-description">
           <i>
-            Hii, I am <a href={config.website}>`${config.bannerName}</a>
+            Hii, I am <a href={config.website}>{config.bannerName}</a>
           </i>
           .<br />  {config.about} <br />
           <a href={config.twitter}>
@@ -109,7 +109,7 @@ export default function HomeScreen(props) {
   ) : (
     <div className="main-box">
       <Helmet>
-        <title>Hemant's Blog</title>
+        <title>{config.bannerName} Blog</title>
         <meta name="description" content="articles.description" />
         <meta property="og:title" content="articles.title" />
         <meta property="og:url" content="hemant-blogs.netlify.app" />
@@ -123,15 +123,14 @@ export default function HomeScreen(props) {
         isPride
       />
       <div className="home-banner">
-        <div className="home-header">Hemant Joshi's Articles</div>
+        <div className="home-header">{config.bannerName}'s Articles</div>
         <div className="home-description">
           <i>
-            Hii, I am <a href="https://hemant.codes/">Hemant Joshi</a>
+            Hii, I am <a href={config.website}>{config.bannerName}</a>
           </i>
-          .<br /> I am 18 Year old Mern Stack Dev, I share a lot of daily
-          content on Twitter, be sure to follow me <br />
-          <a href="https://twitter.com/8bithemant/">
-            <i>@8bithemant </i>
+          .<br />  {config.about} <br />
+          <a href={config.twitter}>
+            <i>twitter</i>
           </a>
         </div>
       </div>
