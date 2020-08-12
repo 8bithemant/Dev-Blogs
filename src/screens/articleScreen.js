@@ -114,7 +114,7 @@ function ArticleScreen(props) {
             Share on{" "}
             <Twitter
               url={window.location.href}
-              shareText={`Hii, check this Awesome Blog post by @ ${config.userNameTwitter} #100daysofocde #DevCommunity`}
+              shareText={`Hi, check this Awesome Blog post by @${config.userNameTwitter} #100daysofocde #DevCommunity`}
             />
           </div>
         </div>
