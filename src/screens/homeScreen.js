@@ -76,7 +76,7 @@ export default function HomeScreen(props) {
     return () => {};
   }, [dispatch]);
   const [more, setMore] = useState(false);
-  const numberOfArticles = more ? articles.length : 2;
+  const numberOfArticles = more ? articles.length : 6;
 
   return loading ? (
     <div className="loading">
