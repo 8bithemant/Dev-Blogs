@@ -83,7 +83,7 @@ function ArticleScreen(props) {
           <div className="container-md">
             <img
               alt={articles.title}
-              src={articles.cover_image}
+              src={articles.cover_image || articles.social_image}
               class="img-fluid"
             />
           </div>
