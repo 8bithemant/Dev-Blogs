@@ -4,7 +4,7 @@ import {GithubImage, LinkedInImage, TwitterImage} from '../img'
 
 export default function Footer() {
   return (
-    <div className="footer_area">
+    <footer className="footer_area">
       <div className="footer_area p_120">
         <div className="container">
           <div className="row footer_inner">
@@ -113,6 +113,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
