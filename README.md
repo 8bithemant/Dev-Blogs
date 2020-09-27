@@ -33,7 +33,7 @@
 </p>
 
 > Preview
-> [hemant-blog.netlify.app](https://hemant-blog.netlify.app)
+> [hemant-blogs.netlify.app](https://hemant-blogs.netlify.app)
 
 To customize the blog according to your Dev user id simply follow the Readme (The Steps Below)
 
@@ -169,7 +169,6 @@ Wow, thanks a lot feel free to make a PR, even a simple update will be helpful
 
 ---
 
-# Make sure to Star and fork.
 ## <br /> Thank You All Contributing and Making The Source Open :stars:.
 :tada: We did love to see more commits and raised issues by you all :tada:.
 :sparkles: To Contribute check the Contribute.md and start making your first PR and Commit's. :sparkles: :tada:
