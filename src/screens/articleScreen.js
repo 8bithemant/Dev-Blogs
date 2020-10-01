@@ -55,7 +55,7 @@ function ArticleScreen(props) {
   }, [dispatch, props.match.params.slug]);
 
   return (
-    <div>
+    <div className="article-container">
       <CssBaseline />
       <HideOnScroll {...props}>
         <AppBar>
