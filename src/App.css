@@ -39,3 +39,9 @@ html[data-theme="dark"] .markdown-body {
 html[data-theme="dark"] .button-container {
   background: rgba(255, 255, 255, 1);
 }
+@media screen and (max-width: 900px) {
+  .button-container {
+    right: 25px;
+    top: 50px;
+  }
+}
